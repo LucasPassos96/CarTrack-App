@@ -15,6 +15,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --light-blue: #0095e4;
 }
 
 * {
@@ -22,3 +23,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.border-3 {
+  border-width: 3px;
+  border-color: var(--light-blue)
+}
+
+.peer:checked ~ .peer-checked:before {
+  content: '';
+  width: 11px;
+  height: 11px;
+  background-color: var(--light-blue);
+  border-radius: 100%;
+}
+
+hr {
+  border: 1px;
+  height: 1px;
+  color: #002d44;
+}
+
+/* peer-checked:before:content-[''] peer-checked:before:w-2 peer-checked:before:h-2 peer-checked:before:rounded-full peer-checked:before:bg-[#0095e4]
+peer-checked:before:content-[''] peer-checked:before:w-2 peer-checked:before:h-2 peer-checked:before:rounded-full peer-checked:before:bg-[#0095e4] */

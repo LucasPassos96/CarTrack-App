@@ -1,12 +1,14 @@
-import Header from "./components/Header/Header";
+import FilterBar from "./components/FilterBar";
+import Header from "./components/Header";
 
 
 function App() {
   return (
     <div className="min-h-screen font-sans">
       <Header />
-      {/* <FilterBar />
-      <MapSection />
+      <FilterBar />
+
+        {/* <MapSection />
       <VehiclesTable /> */}
     </div>
   );
